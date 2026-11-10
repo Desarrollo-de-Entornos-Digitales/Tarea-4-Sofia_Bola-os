@@ -22,6 +22,11 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         router.replace('/login');
     };
 
+    const LINKS = [
+    { href: '/dashboard', label: 'Dashboard' },
+    { href: '/exercises', label: 'Ejercicios' },
+];
+
     return (
         <AuthGuard>
             <div className="min-h-screen bg-base-200">
